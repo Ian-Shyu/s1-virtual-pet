@@ -4,14 +4,28 @@ public class VPMain {
     VirtualPet vp = new VirtualPet();
     
     public VPMain(){
-        vp.feed();
-        vp.exercise();
+        vp.hungry();
+        // vp.exercise();
         this.waitABeat(1000);
-        String ans = this.askForInput("Are you ready to sleep?");
-        if(ans.equals("yes"))
-            vp.sleep();
-        else
-            vp.exercise();
+        // String ans = this.askForInput("Are you ready to sleep?");
+        // if(ans.equals("yes"))
+        //     vp.sleep();
+        // else
+        //     vp.exercise();
+        while (vp.hungerLevel() > 0 || vp.hungerLevel() < 10){
+            String ans = this.askForInput("What do you want to feed the pet?");
+            if (ans.equals("bread"))
+                vp.feed();
+            if (ans.equals("fruit"))
+                vp.fruit();
+            if (ans.equals("drink"))
+                vp.drink();
+            if (ans.equals("desert"))
+                vp.desert();
+            if (ans.equals("nothing"))
+                vp.nothing();
+        }
+        vp.dead();
     }
 
     public void waitABeat(int ms){

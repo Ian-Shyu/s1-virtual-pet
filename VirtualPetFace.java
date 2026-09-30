@@ -200,7 +200,6 @@ public class VirtualPetFace extends JFrame implements ActionListener{
                 g.drawImage(pics.get(loopslot), 0, 0, this.getWidth(), this.getHeight(), null);
             }
         }
-
     }
 
     public class CentredBackgroundBorder implements Border {
