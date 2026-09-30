@@ -64,7 +64,7 @@ public class VirtualPet {
 
     public void drink(){
         face.setMessage("I really like the drink.");
-        face.setImage("ecstatic");
+        face.setImage("ecstaticdrink");
         hunger += 2;
     }
 
