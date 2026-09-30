@@ -58,7 +58,7 @@ public class VirtualPet {
 
     public void fruit(){
         face.setMessage("I do NOT like fruits");
-        face.setImage("annoyed");
+        face.setImage("annoyedfruit");
         hunger -= 3;
     }
 

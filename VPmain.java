@@ -12,17 +12,17 @@ public class VPMain {
         //     vp.sleep();
         // else
         //     vp.exercise();
-        while (vp.hungerLevel() > 0 || vp.hungerLevel() < 10){
-            String ans = this.askForInput("What do you want to feed the pet?");
+        while (vp.hungerLevel() > 0 && vp.hungerLevel() < 10){
+            String ans = this.askForInput("What do you want to feed the pet? Hunger Level: " + vp.hungerLevel());
             if (ans.equals("bread"))
                 vp.feed();
-            if (ans.equals("fruit"))
+            else if (ans.equals("fruit"))
                 vp.fruit();
-            if (ans.equals("drink"))
+            else if (ans.equals("drink"))
                 vp.drink();
-            if (ans.equals("desert"))
+            else if (ans.equals("desert"))
                 vp.desert();
-            if (ans.equals("nothing"))
+            else if (ans.equals("nothing"))
                 vp.nothing();
         }
         vp.dead();
