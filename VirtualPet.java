@@ -34,7 +34,7 @@ public class VirtualPet {
     public void fruit(){
         face.setMessage("I do NOT like fruits");
         face.setImage("annoyedfruit");
-        hunger -= 3;
+        hunger -= 1;
     }
 
     public void drink(){
@@ -43,7 +43,7 @@ public class VirtualPet {
         hunger += 2;
     }
 
-    public void desert(){
+    public void dessert(){
         face.setMessage("Desert taste goooodddd.");
         face.setImage("joyful");
         hunger += 2;
@@ -52,7 +52,7 @@ public class VirtualPet {
     public void nothing(){
         face.setMessage("I am HUNGRY");
         face.setImage("enraged");
-        hunger -= 5;
+        hunger -= 3;
     }
 
     public void dead(){

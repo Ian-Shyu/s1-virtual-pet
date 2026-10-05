@@ -18,4 +18,8 @@ public class Name {
         }
         return part; 
     }
+    //compare first and last to see if same 
+    public boolean isSame(Name other){
+        return this.myFirst == other.myFirst;
+    }
 }

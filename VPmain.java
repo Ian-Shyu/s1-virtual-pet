@@ -8,15 +8,15 @@ public class VPMain {
         this.waitABeat(1000);
         
         while (vp.hungerLevel() > 0 && vp.hungerLevel() < 10){
-            String ans = this.askForInput("What do you want to feed the pet? Hunger Level: " + vp.hungerLevel());
+            String ans = this.askForInput("What do you want to feed the pet? (bread/fruit/drink/dessert/nothing) Hunger Level: " + vp.hungerLevel());
             if (ans.equals("bread"))
                 vp.feed();
             else if (ans.equals("fruit"))
                 vp.fruit();
             else if (ans.equals("drink"))
                 vp.drink();
-            else if (ans.equals("desert"))
-                vp.desert();
+            else if (ans.equals("dessert"))
+                vp.dessert();
             else if (ans.equals("nothing"))
                 vp.nothing();
         }
