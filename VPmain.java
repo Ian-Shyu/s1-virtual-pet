@@ -5,13 +5,8 @@ public class VPMain {
     
     public VPMain(){
         vp.hungry();
-        // vp.exercise();
         this.waitABeat(1000);
-        // String ans = this.askForInput("Are you ready to sleep?");
-        // if(ans.equals("yes"))
-        //     vp.sleep();
-        // else
-        //     vp.exercise();
+        
         while (vp.hungerLevel() > 0 && vp.hungerLevel() < 10){
             String ans = this.askForInput("What do you want to feed the pet? Hunger Level: " + vp.hungerLevel());
             if (ans.equals("bread"))

@@ -15,31 +15,6 @@ public class VirtualPet {
         face.setMessage("Hello.");
     }
     
-    // public void feed() {
-    //     if (hunger > 10) {
-    //         hunger = hunger - 10;
-    //     } else {
-    //         hunger = 0;
-    //     }
-    //     face.setMessage("Yum, thanks");
-    //     face.setImage("normal");
-    // }
-    
-    // public void exercise() {
-    //     hunger = hunger + 3;
-    //     face.setMessage("1, 2, 3, jump.  Whew.");
-    //     face.setImage("tired");
-    // }
-    
-    // public void sleep() {
-    //     hunger = hunger + 1;
-    //     face.setImage("asleep");
-    // }
-
-    // public void wonTheLottery(){
-    //     face.setMessage("No way I won.");
-    // }
-    
     public void hungry(){
         if (hunger < 5){
             face.setImage("starving");
@@ -87,19 +62,6 @@ public class VirtualPet {
     public int hungerLevel(){
         return hunger; 
     }
+ 
 
-// while (vp.hungerLevel > 0){
-//             String ans = this.askForInput("What do you want to feed the pet?");
-//             if (ans.equals("bread"))
-//                 vp.feed();
-//             if (ans.equals("drink"))
-//                 vp.drink();
-//             if (ans.equals("desert"))
-//                 vp.desert();
-//             if (ans.equals("nothing"))
-//                 vp.nothing();
-//         }
-//         vp.dead();
-
-
-} // end Virtual Pet
+} 
