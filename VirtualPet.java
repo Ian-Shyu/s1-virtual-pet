@@ -21,7 +21,7 @@ public class VirtualPet {
         }
     }
 
-    public void feed(){
+    public void bread(){
         if (hunger > 5) {
             hunger = hunger - 3;
         }

@@ -10,7 +10,7 @@ public class VPMain {
         while (vp.hungerLevel() > 0 && vp.hungerLevel() < 10){
             String ans = this.askForInput("What do you want to feed the pet? (bread/fruit/drink/dessert/nothing) Hunger Level: " + vp.hungerLevel());
             if (ans.equals("bread"))
-                vp.feed();
+                vp.bread();
             else if (ans.equals("fruit"))
                 vp.fruit();
             else if (ans.equals("drink"))
