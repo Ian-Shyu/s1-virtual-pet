@@ -51,8 +51,8 @@ public class VirtualPet {
 
     public void nothing(){
         face.setMessage("I am HUNGRY");
-        face.setImage("enraged");
-        hunger -= 3;
+        face.setImage("enragedown");
+        hunger -= 2;
     }
 
     public void dead(){
